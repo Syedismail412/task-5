@@ -1,41 +1,25 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
 
 
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
-
-
-# In[2]:
+import seaborn as sn
 
 
 df=pd.read_csv("titanic.csv")
 df.head(10)
 
 
-# In[3]:
-
 
 df.shape
 
-
-# In[4]:
 
 
 df.describe()
 
 
-# In[5]:
-
 
 df['Survived'].value_counts()
-
-
-# In[6]:
 
 
 #visualise the count of survivals wrt pclass
